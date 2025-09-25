@@ -1,0 +1,27 @@
+{
+    'results_dir': 'backtests/20250919_171925/exp_alphas_optimizer_top20',
+    'summary': {
+        'test_start': '2024-01-01',
+        'test_end': '2025-01-31',
+        'final_equity': 366854.3315297296,
+        'cagr': 0.5155252261190226,
+        'sharpe': 1.9290251263982943,
+        'max_drawdown': -0.13386132881569238,
+        'baseline_final': 120591.96863714178,
+        'baseline_cagr': 0.19687134436948672,
+        'baseline_sharpe': 1.5743600331450283,
+        'baseline_max_drawdown': -0.06900171218824083,
+        'num_trades': 1705,
+        'turnover_mean': 0.1350740724131741,
+        'var_95': -0.022920549740342022,
+        'cvar_95': -0.0293907242491594
+    }
+}
+{"results_dir": "backtests/20250919_171925/exp_alphas_optimizer_top20", 
+"summary": {"test_start": "2024-01-01", "test_end": "2025-01-31", 
+"final_equity": 366854.3315297296, "cagr": 0.5155252261190226, "sharpe": 
+1.9290251263982943, "max_drawdown": -0.13386132881569238, "baseline_final": 
+120591.96863714178, "baseline_cagr": 0.19687134436948672, "baseline_sharpe": 
+1.5743600331450283, "baseline_max_drawdown": -0.06900171218824083, "num_trades":
+1705, "turnover_mean": 0.1350740724131741, "var_95": -0.022920549740342022, 
+"cvar_95": -0.0293907242491594}}

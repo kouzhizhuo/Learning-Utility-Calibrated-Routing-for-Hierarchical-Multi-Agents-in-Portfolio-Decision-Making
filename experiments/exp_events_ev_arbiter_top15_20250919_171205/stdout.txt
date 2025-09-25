@@ -1,0 +1,27 @@
+{
+    'results_dir': 'backtests/20250919_171205/exp_events_ev_arbiter_top15',
+    'summary': {
+        'test_start': '2024-01-01',
+        'test_end': '2025-01-31',
+        'final_equity': 211650.37894097235,
+        'cagr': 0.5236664572425636,
+        'sharpe': 1.8727711841499874,
+        'max_drawdown': -0.14140703331967638,
+        'baseline_final': 120591.96863714178,
+        'baseline_cagr': 0.19687134436948672,
+        'baseline_sharpe': 1.5743600331450283,
+        'baseline_max_drawdown': -0.06900171218824083,
+        'num_trades': 1228,
+        'turnover_mean': 0.04275273623375781,
+        'var_95': -0.021884661706564557,
+        'cvar_95': -0.03406224168961692
+    }
+}
+{"results_dir": "backtests/20250919_171205/exp_events_ev_arbiter_top15", 
+"summary": {"test_start": "2024-01-01", "test_end": "2025-01-31", 
+"final_equity": 211650.37894097235, "cagr": 0.5236664572425636, "sharpe": 
+1.8727711841499874, "max_drawdown": -0.14140703331967638, "baseline_final": 
+120591.96863714178, "baseline_cagr": 0.19687134436948672, "baseline_sharpe": 
+1.5743600331450283, "baseline_max_drawdown": -0.06900171218824083, "num_trades":
+1228, "turnover_mean": 0.04275273623375781, "var_95": -0.021884661706564557, 
+"cvar_95": -0.03406224168961692}}

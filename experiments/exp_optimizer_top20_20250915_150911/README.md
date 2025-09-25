@@ -1,0 +1,17 @@
+# exp_optimizer_top20
+
+```json
+{
+  "test_start": "2024-01-01",
+  "test_end": "2025-01-31",
+  "final_equity": 229804.9533666135,
+  "cagr": 0.4169507593,
+  "sharpe": 1.5786984246,
+  "max_drawdown": -0.1498903848,
+  "baseline_final": 120591.9686371418,
+  "baseline_cagr": 0.1968713444,
+  "baseline_sharpe": 1.5743600331,
+  "baseline_max_drawdown": -0.0690017122,
+  "num_trades": 1342
+}
+```

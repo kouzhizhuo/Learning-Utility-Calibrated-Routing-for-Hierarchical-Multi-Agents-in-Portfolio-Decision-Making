@@ -1,0 +1,195 @@
+/Users/alankou/Desktop/ICLR project/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/alankou/Desktop/ICLR project/profinview/cli.py:122 in main            │
+│                                                                              │
+│   119 │   │   │   │   sym_slug = sym_slug[:50] + "_more"                     │
+│   120 │   │   │   suffix = f"_lb{lookback}_top{top_n}_{rebalance_freq}" + (" │
+│   121 │   │   │   rd = Path("backtests") / f"{ts}" / f"{sym_slug}{suffix}"   │
+│ ❱ 122 │   │   summary = runner.run(str(rd), make_plots=True)                 │
+│   123 │   │   if verbose:                                                    │
+│   124 │   │   │   print({"results_dir": str(rd), "summary": summary})        │
+│   125 │   │   print(json.dumps({"results_dir": str(rd), "summary": summary}) │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │ aggregator_policy = 'median'                                             │ │
+│ │       all_symbols = True                                                 │ │
+│ │            alphas = False                                                │ │
+│ │          backtest = True                                                 │ │
+│ │               cfg = BacktestConfig(                                      │ │
+│ │                     │   data_dir='/Users/alankou/Desktop/ICLR            │ │
+│ │                     project/CN_data',                                    │ │
+│ │                     │   symbols=[                                        │ │
+│ │                     │   │   '000001.SZ',                                 │ │
+│ │                     │   │   '000002.SZ',                                 │ │
+│ │                     │   │   '000004.SZ',                                 │ │
+│ │                     │   │   '000005.SZ',                                 │ │
+│ │                     │   │   '000006.SZ',                                 │ │
+│ │                     │   │   '000007.SZ',                                 │ │
+│ │                     │   │   '000008.SZ',                                 │ │
+│ │                     │   │   '000009.SZ',                                 │ │
+│ │                     │   │   '000010.SZ',                                 │ │
+│ │                     │   │   '000011.SZ',                                 │ │
+│ │                     │   │   ... +5337                                    │ │
+│ │                     │   ],                                               │ │
+│ │                     │   lookback_days=180,                               │ │
+│ │                     │   capital=100000.0,                                │ │
+│ │                     │   risk_per_trade=0.01,                             │ │
+│ │                     │   top_n=20,                                        │ │
+│ │                     │   test_start='2024-01-01',                         │ │
+│ │                     │   test_end='2025-01-31',                           │ │
+│ │                     │   rebalance_freq='W-FRI',                          │ │
+│ │                     │   rl=False,                                        │ │
+│ │                     │   train_start='2021-01-01',                        │ │
+│ │                     │   train_end='2023-06-30',                          │ │
+│ │                     │   val_start='2023-07-01',                          │ │
+│ │                     │   val_end='2023-12-31',                            │ │
+│ │                     │   entry_thresh=0.05,                               │ │
+│ │                     │   exit_thresh=-0.05,                               │ │
+│ │                     │   take_profit=0.15,                                │ │
+│ │                     │   stop_loss=0.08,                                  │ │
+│ │                     │   max_weight_per_symbol=0.08,                      │ │
+│ │                     │   optimizer=True,                                  │ │
+│ │                     │   consensus=True,                                  │ │
+│ │                     │   router_policy='diversity',                       │ │
+│ │                     │   aggregator_policy='median',                      │ │
+│ │                     │   router_top_k=3,                                  │ │
+│ │                     │   router_min_conf=0.05,                            │ │
+│ │                     │   signal_cost_bps=5.0                              │ │
+│ │                     )                                                    │ │
+│ │         consensus = True                                                 │ │
+│ │          data_dir = '/Users/alankou/Desktop/ICLR project/CN_data'        │ │
+│ │            events = False                                                │ │
+│ │          lookback = 180                                                  │ │
+│ │         optimizer = True                                                 │ │
+│ │                rd = PosixPath('backtests/20250919_173829/exp_cn_consens… │ │
+│ │    rebalance_freq = 'W-FRI'                                              │ │
+│ │       results_dir = 'backtests/20250919_173829/exp_cn_consensus_top20'   │ │
+│ │                rl = False                                                │ │
+│ │   router_min_conf = 0.05                                                 │ │
+│ │     router_policy = 'diversity'                                          │ │
+│ │      router_top_k = 3                                                    │ │
+│ │            runner = <profinview.backtest.engine.BacktestRunner object at │ │
+│ │                     0x109288820>                                         │ │
+│ │   signal_cost_bps = 5.0                                                  │ │
+│ │           symbols = 'AAPL,MSFT'                                          │ │
+│ │          test_end = '2025-01-31'                                         │ │
+│ │        test_start = '2024-01-01'                                         │ │
+│ │           tickers = [                                                    │ │
+│ │                     │   '000001.SZ',                                     │ │
+│ │                     │   '000002.SZ',                                     │ │
+│ │                     │   '000004.SZ',                                     │ │
+│ │                     │   '000005.SZ',                                     │ │
+│ │                     │   '000006.SZ',                                     │ │
+│ │                     │   '000007.SZ',                                     │ │
+│ │                     │   '000008.SZ',                                     │ │
+│ │                     │   '000009.SZ',                                     │ │
+│ │                     │   '000010.SZ',                                     │ │
+│ │                     │   '000011.SZ',                                     │ │
+│ │                     │   ... +5337                                        │ │
+│ │                     ]                                                    │ │
+│ │             top_n = 20                                                   │ │
+│ │         train_end = '2023-06-30'                                         │ │
+│ │       train_start = '2021-01-01'                                         │ │
+│ │           val_end = '2023-12-31'                                         │ │
+│ │         val_start = '2023-07-01'                                         │ │
+│ │           verbose = True                                                 │ │
+│ │          workflow = 'technical'                                          │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /Users/alankou/Desktop/ICLR project/profinview/backtest/engine.py:100 in run │
+│                                                                              │
+│    97 │   │   return portfolio_values                                        │
+│    98 │                                                                      │
+│    99 │   def run(self, results_dir: str, make_plots: bool = True) -> Dict[s │
+│ ❱ 100 │   │   md_full = self._prepare_data()                                 │
+│   101 │   │   all_dates = sorted({d for df in md_full.values() for d in df[" │
+│   102 │   │   if len(all_dates) <= self.cfg.lookback_days:                   │
+│   103 │   │   │   raise ValueError("Insufficient data for lookback window")  │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │  make_plots = True                                                       │ │
+│ │ results_dir = 'backtests/20250919_173829/exp_cn_consensus_top20'         │ │
+│ │        self = <profinview.backtest.engine.BacktestRunner object at       │ │
+│ │               0x109288820>                                               │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /Users/alankou/Desktop/ICLR project/profinview/backtest/engine.py:70 in      │
+│ _prepare_data                                                                │
+│                                                                              │
+│    67 │   │   self.strategy_agent = StrategyAgent(top_n=cfg.top_n)           │
+│    68 │                                                                      │
+│    69 │   def _prepare_data(self) -> Dict[str, pd.DataFrame]:                │
+│ ❱  70 │   │   raw = self.loader.load(self.cfg.symbols)                       │
+│    71 │   │   for sym, df in raw.items():                                    │
+│    72 │   │   │   df = df.copy()                                             │
+│    73 │   │   │   df["date"] = pd.to_datetime(df["date"]).dt.date            │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │ self = <profinview.backtest.engine.BacktestRunner object at 0x109288820> │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /Users/alankou/Desktop/ICLR project/profinview/data/loader.py:226 in load    │
+│                                                                              │
+│   223 │   │   │   │   except Exception:                                      │
+│   224 │   │   │   │   │   break                                              │
+│   225 │   │   # Fallback to per-symbol CSVs                                  │
+│ ❱ 226 │   │   return self._load_from_symbol_files(symbols)                   │
+│   227                                                                        │
+│   228                                                                        │
+│   229 class CNGenericCSVLoader:                                              │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │ agg_path = '/Users/alankou/Desktop/ICLR                                  │ │
+│ │            project/CN_data/tushare_daily_20240216195903.csv'             │ │
+│ │        f = 'tushare_daily_20240216195903.csv'                            │ │
+│ │     self = <profinview.data.loader.TuShareDailyCSVLoader object at       │ │
+│ │            0x1092889a0>                                                  │ │
+│ │  symbols = [                                                             │ │
+│ │            │   '000001.SZ',                                              │ │
+│ │            │   '000002.SZ',                                              │ │
+│ │            │   '000004.SZ',                                              │ │
+│ │            │   '000005.SZ',                                              │ │
+│ │            │   '000006.SZ',                                              │ │
+│ │            │   '000007.SZ',                                              │ │
+│ │            │   '000008.SZ',                                              │ │
+│ │            │   '000009.SZ',                                              │ │
+│ │            │   '000010.SZ',                                              │ │
+│ │            │   '000011.SZ',                                              │ │
+│ │            │   ... +5337                                                 │ │
+│ │            ]                                                             │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│                                                                              │
+│ /Users/alankou/Desktop/ICLR project/profinview/data/loader.py:201 in         │
+│ _load_from_symbol_files                                                      │
+│                                                                              │
+│   198 │   │   │   except Exception:                                          │
+│   199 │   │   │   │   continue                                               │
+│   200 │   │   if not result:                                                 │
+│ ❱ 201 │   │   │   raise FileNotFoundError("No usable TuShare per-symbol CSVs │
+│   202 │   │   return result                                                  │
+│   203 │                                                                      │
+│   204 │   def load(self, symbols: List[str]) -> Dict[str, pd.DataFrame]:     │
+│                                                                              │
+│ ╭───────────────────────────────── locals ─────────────────────────────────╮ │
+│ │ candidates = []                                                          │ │
+│ │     result = {}                                                          │ │
+│ │       self = <profinview.data.loader.TuShareDailyCSVLoader object at     │ │
+│ │              0x1092889a0>                                                │ │
+│ │        sym = '873833.BJ'                                                 │ │
+│ │    symbols = [                                                           │ │
+│ │              │   '000001.SZ',                                            │ │
+│ │              │   '000002.SZ',                                            │ │
+│ │              │   '000004.SZ',                                            │ │
+│ │              │   '000005.SZ',                                            │ │
+│ │              │   '000006.SZ',                                            │ │
+│ │              │   '000007.SZ',                                            │ │
+│ │              │   '000008.SZ',                                            │ │
+│ │              │   '000009.SZ',                                            │ │
+│ │              │   '000010.SZ',                                            │ │
+│ │              │   '000011.SZ',                                            │ │
+│ │              │   ... +5337                                               │ │
+│ │              ]                                                           │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+╰──────────────────────────────────────────────────────────────────────────────╯
+FileNotFoundError: No usable TuShare per-symbol CSVs found

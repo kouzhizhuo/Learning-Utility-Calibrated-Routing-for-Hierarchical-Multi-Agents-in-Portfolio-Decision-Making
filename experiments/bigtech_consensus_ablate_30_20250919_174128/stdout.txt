@@ -1,0 +1,27 @@
+{
+    'results_dir': 'backtests/20250919_174128/bigtech_consensus_ablate_30',
+    'summary': {
+        'test_start': '2024-01-01',
+        'test_end': '2025-01-31',
+        'final_equity': 418193.3428248563,
+        'cagr': 0.7815941935083075,
+        'sharpe': 2.0562388419418323,
+        'max_drawdown': -0.16755894182903946,
+        'baseline_final': 166056.12956088426,
+        'baseline_cagr': 0.6025540457621354,
+        'baseline_sharpe': 1.9530053483444603,
+        'baseline_max_drawdown': -0.17697453134775643,
+        'num_trades': 455,
+        'turnover_mean': 0.0808916855696306,
+        'var_95': -0.02569550997791542,
+        'cvar_95': -0.04009329249845912
+    }
+}
+{"results_dir": "backtests/20250919_174128/bigtech_consensus_ablate_30", 
+"summary": {"test_start": "2024-01-01", "test_end": "2025-01-31", 
+"final_equity": 418193.3428248563, "cagr": 0.7815941935083075, "sharpe": 
+2.0562388419418323, "max_drawdown": -0.16755894182903946, "baseline_final": 
+166056.12956088426, "baseline_cagr": 0.6025540457621354, "baseline_sharpe": 
+1.9530053483444603, "baseline_max_drawdown": -0.17697453134775643, "num_trades":
+455, "turnover_mean": 0.0808916855696306, "var_95": -0.02569550997791542, 
+"cvar_95": -0.04009329249845912}}

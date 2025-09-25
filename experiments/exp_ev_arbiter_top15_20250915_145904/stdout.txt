@@ -1,0 +1,21 @@
+{
+    'results_dir': 'backtests/20250915_145904/exp_ev_arbiter_top15',
+    'summary': {
+        'test_start': '2024-01-01',
+        'test_end': '2025-01-31',
+        'final_equity': 192769.0704883231,
+        'cagr': 0.523340956544178,
+        'sharpe': 1.9516731367981894,
+        'max_drawdown': -0.14854581804046185,
+        'baseline_final': 120591.96863714178,
+        'baseline_cagr': 0.19687134436948672,
+        'baseline_sharpe': 1.5743600331450283,
+        'baseline_max_drawdown': -0.06900171218824083,
+        'num_trades': 1167
+    }
+}
+{"results_dir": "backtests/20250915_145904/exp_ev_arbiter_top15", "summary": {"test_start": "2024-01-01", 
+"test_end": "2025-01-31", "final_equity": 192769.0704883231, "cagr": 0.523340956544178, "sharpe": 
+1.9516731367981894, "max_drawdown": -0.14854581804046185, "baseline_final": 120591.96863714178, 
+"baseline_cagr": 0.19687134436948672, "baseline_sharpe": 1.5743600331450283, "baseline_max_drawdown": 
+-0.06900171218824083, "num_trades": 1167}}
